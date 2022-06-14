@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
+<body class="bg-light">
     <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand">Liam Silagan</a>
@@ -18,51 +18,50 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <a href="/index.html" class="nav-item nav-link">Home</a>
-                    <a href="/projects.html" class="nav-item nav-link active">Projects</a>
                     <a href="/resume.html" class="nav-item nav-link">Resume</a>
+                    <a href="/projects.html" class="nav-item nav-link active">Projects</a>
                 </div>
             </div>
         </div>
     </nav>
-    <main class="container-fluid" style="margin-bottom: 65px">
-        <ul>
-            <li><a href="#">Hello World Project</a></li>
-            <li><a href="#">Hello World Project3</a></li>
-            <li><a href="#">Surviving College</a></li>
-            <li><a href="#">Goodbye Project #2</a></li>
-            <li><a href="#">Hello World Project</a></li>
-            <li><a href="#">Hello World Project3</a></li>
-            <li><a href="#">Surviving College</a></li>
-            <li><a href="#">Goodbye Project #2</a></li>
-            <li><a href="#">Hello World Project</a></li>
-            <li><a href="#">Hello World Project3</a></li>
-            <li><a href="#">Surviving College</a></li>
-            <li><a href="#">Goodbye Project #2</a></li>
-            <li><a href="#">Hello World Project</a></li>
-            <li><a href="#">Hello World Project3</a></li>
-            <li><a href="#">Surviving College</a></li>
-            <li><a href="#">Goodbye Project #2</a></li>
-            <li><a href="#">Hello World Project</a></li>
-            <li><a href="#">Hello World Project3</a></li>
-            <li><a href="#">Surviving College</a></li>
-            <li><a href="#">Goodbye Project #2</a></li>
-            <li><a href="#">Hello World Project</a></li>
-            <li><a href="#">Hello World Project3</a></li>
-            <li><a href="#">Surviving College</a></li>
-            <li><a href="#">Goodbye Project #2</a></li>
-            <li><a href="#">Hello World Project</a></li>
-            <li><a href="#">Hello World Project3</a></li>
-            <li><a href="#">Surviving College</a></li>
-            <li><a href="#">Goodbye Project #2</a></li>
-            <li><a href="#">Hello World Project</a></li>
-            <li><a href="#">Hello World Project3</a></li>
-            <li><a href="#">Surviving College</a></li>
-            <li><a href="#">Goodbye Project #2</a></li>
-        </ul>
+    <main class="container-fluid mt-3" style="margin-bottom: 65px">
+        <div class="container-fluid">
+            <ul class="nav nav-justified nav-tabs mb-3 " id="myTab" role="tablist">
+                <li class="nav-item font-monospace fs-4" role="presentation">
+                    <button class="nav-link active text-black-50 h-100" id="website-tab" data-bs-toggle="tab" data-bs-target="#website" type="button" role="tab" aria-controls="website" aria-selected="true">This Website</button>
+                </li>
+                <li class="nav-item font-monospace fs-4" role="presentation">
+                    <button class="nav-link text-black-50 h-100" id="website2-tab" data-bs-toggle="tab" data-bs-target="#website2" type="button" role="tab" aria-controls="website2" aria-selected="true">Another Website</button>
+                </li>
+                <li class="nav-item font-monospace fs-4" role="presentation">
+                    <button class="nav-link text-black-50 h-100" id="leobot-tab" data-bs-toggle="tab" data-bs-target="#leobot" type="button" role="tab" aria-controls="leobot" aria-selected="false">LeoBot</button>
+                </li>
+                <li class="nav-item font-monospace fs-4" role="presentation">
+                    <button class="nav-link text-black-50 h-100" id="device-tab" data-bs-toggle="tab" data-bs-target="#device" type="button" role="tab" aria-controls="device" aria-selected="false">Portable Gaming Device</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="website" role="tabpanel" aria-labelledby="website-tab">
+                    <p class="fw-bold fs-3 text-center">A self-coded "original" webpage</p>
+                    <p class="fs-5">One of my first forays into web development without the use of boilerplate code. This website is a central place for me to introduce myself and to document all the projects I'm working on.</p>
+                    <p class="fs-5">This website was created "from scratch" using my knowledge of HTML, CSS, and JavaScript with the help of the Bootstrap framework.</p>
+                    <p class="fs-5">Server hosting is provided through GitHub Pages.</p>
+                </div>
+                <div class="tab-pane fade show" id="website2" role="tabpanel" aria-labelledby="website2-tab">
+                    <p class="fw-bold fs-3 text-center">Another self-coded "original" webpage</p>
+                </div>
+                <div class="tab-pane fade" id="leobot" role="tabpanel" aria-labelledby="leobot-tab">
+                    <p class="fw-bold fs-3 text-center">Multi-purpose (mostly games) Discord Bot</p>
+                </div>
+                <div class="tab-pane fade" id="device" role="tabpanel" aria-labelledby="device-tab">
+                    <p class="fw-bold fs-3 text-center">MSP430 Based Handheld Gaming Device</p>
+                </div>
+            </div>
+        </div>
     </main>
     <navbar class="navbar fixed-bottom navbar-expand-md navbar-dark bg-dark ">
         <ul class="navbar-nav mx-auto">
-            <li class="nav-item active text-center">
+            <li class="nav-item active">
                 <a class="nav-link" href="https://toso.rocks" target="_blank">Onto the next site in the webring!</a>
             </li>
         </ul>
