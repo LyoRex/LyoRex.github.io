@@ -18,6 +18,7 @@ function compileCode() {
     let output = "";
     let input = codeInput.value;
     input = input.replace(/\s+/g, '');
+    input = input.toUpperCase();
 
     let commands = input.split("YAH");
     for (let i = commands.length; i >= 0; i--) {
