@@ -140,8 +140,8 @@
                 </div>
                 <div class="tab-pane fade" id="yayaya" role="tabpanel" aria-labelledby="yayaya-tab">
                     <p class="fw-bold fs-3 text-center font-monospace mb-1">purposefully preposterous programming (p)language</p>
-                    <p class="fs-5">YAYAYA is an original programming language based around the ever popular Brainfuck (and other similar esolangs). The intent behind the language was to make it fully pronounceable with the syllable "YA" (although most programs will sound the exact same when enunciated).</p>
-                    <p class="fs-5">The attached GitHub link also includes a compiler I wrote which parses any specified file and displays the output of the program.</p>
+                    <p class="fs-5">YAYAYA is an programming language I created based around the ever popular Brainfuck (and other similar esolangs). The intent behind the language was to make it fully pronounceable with the syllable "YA" (although most programs will sound the exact same when enunciated).</p>
+                    <p class="fs-5">The attached GitHub link also includes a compiler I wrote which parses any specified file text file as YAYAYA and displays the output of the program.</p>
                     <p class="fs-5">Like Brainfuck, there are eight different commands that manipulate data pointers and an instruction pointer. The biggest difference is that YAYAYA contains a delimiter (YAH) which separates each command. Also, all white space is ignored in the parsing of the source code.</p>
                     <button class="btn btn-dark" onclick="showCompiler()">Open YAYAYA Compiler</button>
                     <table class="table table-striped">
@@ -208,6 +208,53 @@
                 <label for="codeOutput">Type your code here:</label>
                 <textarea class="form-control" id="codeOutput" rows="10" style="font-family: 'Courier New', Courier, monospace; font-weight: bolder" readonly></textarea>
             </div>
+            
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Command</th>
+                        <th scope="col">Function</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">YA</th>
+                        <td>Increment data pointer</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">A</th>
+                        <td>Decrement data pointer</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">YAYA</th>
+                        <td>Increment byte at the data pointer</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">AYA</th>
+                        <td>Decrement byte at the data pointer</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">YAYAYA</th>
+                        <td>Output the byte at the data pointer</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">AYAYA</th>
+                        <td>Take one byte of input from stdin and store it at the data pointer</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">??</th>
+                        <td>If the byte at the data pointer is 0, jump to the matching !!</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">!!</th>
+                        <td>If the byte at the data pointer is not 0, jump back to the first command after the matching ??</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">YAH</th>
+                        <td>Delimiter of commands</td>
+                    </tr>
+                </tbody>
+            </table>
         </main>
         <nav class="navbar fixed-bottom navbar-expand-md navbar-dark bg-dark">
             <ul class="navbar-nav mx-auto">
