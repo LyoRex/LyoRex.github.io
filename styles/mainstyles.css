@@ -1,3 +1,11 @@
+body {
+    --main-color: #f7a688;
+}
+
 .font-righteous {
     font-family: "Righteous";
+}
+
+body {
+    margin-bottom: 100px;
 }
