@@ -17,8 +17,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://api.fonts.coollabs.io/css2?family=Righteous&display=swap" rel="stylesheet" />
 
+        <!-- Font Awesome -->
+        <link href="styles/font-awesome/css/fontawesome.css" rel="stylesheet" />
+        <link href="styles/font-awesome/css/brands.css" rel="stylesheet" />
+        <link href="styles/font-awesome/css/solid.css" rel="stylesheet" />
+
         <!--CUSTOM-->
         <link href="/styles/mainstyles.css" rel="stylesheet" />
+        <link href="/styles/index.css" rel="stylesheet" />
     </head>
     <body class="bg-light">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fs-2">
@@ -36,11 +42,49 @@
                 </div>
             </div>
         </nav>
-        <main class="container-fluid" style="margin-bottom: 65px">
-            <p class="lead fs-1 text-center" style="vertical-align: middle">Welcome to Liam Silagan's Website</p>
+        <main class="container mt-5 font-monospace">
+            <div class="row">
+                <div class="expanding-word-container col-lg-7">
+                    <span style="font-size:5em;">Hi, I'm <span id="nameText" class="fw-bold font-monospace button-30"style="font-size:6rem;">Liam</span></span>
+                    <div class="expanding-word text-start">
+                        <span id="nameLetter0" class="letter fw-bold" data-sentence="oftware Enthusiast"><span class="first-letter button">S</span></span>
+                        <span id="nameLetter1" class="letter fw-bold" data-sentence="nnovator"><span class="first-letter button">I</span></span>
+                        <span id="nameLetter2" class="letter fw-bold" data-sentence="earner"><span class="first-letter button">L</span></span>
+                        <span id="nameLetter3" class="letter fw-bold" data-sentence="ss Fat"><span class="first-letter button">A</span></span>
+                        <span id="nameLetter4" class="letter fw-bold" data-sentence="ame Developer"><span class="first-letter button">G</span></span>
+                        <span id="nameLetter5" class="letter fw-bold" data-sentence="utomobile Owner"><span class="first-letter button">A</span></span>
+                        <span id="nameLetter6" class="letter fw-bold" data-sentence="BA Fan"><span class="first-letter button">N</span></span>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <img src="images/profile/liam_profile.webp" class="profile-pic">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <h1 class="text-decoration-underline" style="font-variant: small-caps">About Me</h1>
+                <ul class="fs-3 list-group">
+                    <li class="list-group-item">I am a Validation Engineer at Texas Instruments</li>
+                    <li class="list-group-item">I graduated from the University of Texas at Dallas with a Bachelors of Science in Computer Engineering and a Masters of Science in Computer Engineering</li>
+                    <li class="list-group-item">I make video games</li>
+                </ul>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <h1 class="text-decoration-underline" style="font-variant: small-caps">Links</h1>
+                <ul class="fs-3 list-unstyled">
+                    <a class="btn btn-dark mb-2" style="background-color: #0077b5" target="_blank" href="https://www.linkedin.com/in/liamsilagan/" role="button"><i class="fab fa-linkedin"></i></a>
+                    <a class="btn btn-dark mb-2" style="background-color: #000000" target="_blank" href="https://github.com/LyoRex" role="button"><i class="fab fa-github"></i></a>
+                    <a class="btn btn-dark mb-2" style="background-color: #777777" target="_blank" href="https://leoroko.itch.io/" role="button"><i class="fab fa-itch-io"></i></a>
+                </ul>
+            </div>
         </main>
     </body>
 
     <!--BOOTSTRAP-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <!--CUSTOM-->
+    <script src="js/index.js"></script>
 </html>
