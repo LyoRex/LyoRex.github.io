@@ -50,21 +50,16 @@
             <div id="currentProjects" class="project-page">
                 <ul class="nav nav-justified nav-tabs mb-3" id="currentProjectsTab" role="tablist">
                     <li class="nav-item font-monospace fs-4" role="presentation">
-                        <button class="nav-link active text-black-50 h-100" id="website-tab" data-bs-toggle="tab" data-bs-target="#website" type="button" role="tab" aria-controls="website" aria-selected="true">THIS WEBSITE</button>
+                        <button class="nav-link active text-black-50 h-100" id="device-tab" data-bs-toggle="tab" data-bs-target="#device" type="button" role="tab" aria-controls="device" aria-selected="false">PORTABLE GAMING DEVICE</button>
                     </li>
                     <li class="nav-item font-monospace fs-4" role="presentation">
-                        <button class="nav-link text-black-50 h-100" id="device-tab" data-bs-toggle="tab" data-bs-target="#device" type="button" role="tab" aria-controls="device" aria-selected="false">PORTABLE GAMING DEVICE</button>
+                        <button class="nav-link text-black-50 h-100" id="website-tab" data-bs-toggle="tab" data-bs-target="#website" type="button" role="tab" aria-controls="website" aria-selected="true">THIS WEBSITE</button>
                     </li>
                 </ul>
                 <div class="tab-content" id="currentProjectsTabContent">
-                    <div class="tab-pane fade show active" id="website" role="tabpanel" aria-labelledby="website-tab">
-                        <p class="fw-bold fs-3 text-center font-monospace">a self-made webpage</p>
-                        <p class="fs-5">This website was created "from scratch" using my knowledge of HTML, CSS, and JavaScript with the help of the Bootstrap framework.</p>
-                        <p class="fs-5">Server hosting is provided through GitHub Pages.</p>
-                    </div>
-                    <div class="tab-pane fade" id="device" role="tabpanel" aria-labelledby="device-tab">
+                    <div class="tab-pane fade show active" id="device" role="tabpanel" aria-labelledby="device-tab">
                         <p class="fw-bold fs-3 text-center font-monospace">playing rock paper scissors on an MSP430</p>
-                        <p class="fs-5">Out of all the projects on this website, this is the one project that actually requires some semblance of electrical engineering competence (albeit not much). As a general overview, this project involves an MSP430 microcontroller attached to 240 x 320 TFT display and five push buttons. Using the buttons, you can play "Rock, Paper, Scissors" against a random number generator.</p>
+                        <p class="fs-5">Out of all the projects on this website, this is the one project that actually requires some semblance of electrical engineering competence (albeit not much). As a general overview, this project involves an MSP430 microcontroller attached to 240 x 320 TFT display and six push buttons. Using the buttons, you can play "Rock, Paper, Scissors" against a random number generator.</p>
                         <p class="fs-5">For now, the extent of the features of this project go as far as keep tracking of the player's longest winning streak; however, the expandability potential of this project is vast. Just to name a few, I plan to (in no particular order):</p>
                         <ul>
                             <li class="fs-5">Add more games to play</li>
@@ -74,30 +69,91 @@
                             <li class="fs-5">Attach the touch pins of the dispaly to the microcontroller in order to enable the ability to develop touch based games</li>
                         </ul>
                         <h3>Source Code</h3>
-                        <p class="fs-5">For now, the code is not publicly available because it's a hacky mess of spaghetti.</p>
+                        <p class="fs-5"><a href="https://github.com/LyoRex/portable_game" target="_blank">Link To Github</a></p>
                         <h3>Video Demo</h3>
                         <video class="w-100" controls>
-                            <source src="media/videos/Gaming_Device_Demo.mp4" type="video/mp4">
+                            <source src="media/videos/Portable_Gaming_Device_Demo.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
+                    </div>
+                    <div class="tab-pane fade" id="website" role="tabpanel" aria-labelledby="website-tab">
+                        <p class="fw-bold fs-3 text-center font-monospace">a self-made webpage</p>
+                        <p class="fs-5">This website was created "from scratch" using my knowledge of HTML, CSS, and JavaScript with the help of the Bootstrap framework.</p>
+                        <p class="fs-5">Server hosting is provided through GitHub Pages.</p>
                     </div>
                 </div>
             </div>
             <div id="completedProjects" class="project-page" style="display:none;">
                 <ul class="nav nav-justified nav-tabs mb-3" id="currentProjectsTab" role="tablist">
                     <li class="nav-item font-monospace fs-4" role="presentation">
-                        <button class="nav-link active text-black-50 h-100" id="website2-tab" data-bs-toggle="tab" data-bs-target="#website2" type="button" role="tab" aria-controls="website2" aria-selected="true">ANOTHER WEBSITE</button>
+                        <button class="nav-link active text-black-50 h-100" id="yayaya-tab" data-bs-toggle="tab" data-bs-target="#yayaya" type="button" role="tab" aria-controls="device" aria-selected="false">YAYAYA LANGUAGE</button>
+                    </li>
+                    <li class="nav-item font-monospace fs-4" role="presentation">
+                        <button class="nav-link text-black-50 h-100" id="website2-tab" data-bs-toggle="tab" data-bs-target="#website2" type="button" role="tab" aria-controls="website2" aria-selected="true">ANOTHER WEBSITE</button>
                     </li>
                     <li class="nav-item font-monospace fs-4" role="presentation">
                         <button class="nav-link text-black-50 h-100" id="leobot-tab" data-bs-toggle="tab" data-bs-target="#leobot" type="button" role="tab" aria-controls="leobot" aria-selected="false">LEOBOT</button>
                     </li>
-                    <li class="nav-item font-monospace fs-4" role="presentation">
-                        <button class="nav-link text-black-50 h-100" id="yayaya-tab" data-bs-toggle="tab" data-bs-target="#yayaya" type="button" role="tab" aria-controls="device" aria-selected="false">YAYAYA LANGUAGE</button>
-                    </li>
                 </ul>
                 
                 <div class="tab-content" id="ongoingProjectsTabContent">
-                    <div class="tab-pane fade show active" id="website2" role="tabpanel" aria-labelledby="website2-tab">
+                    <div class="tab-pane fade show active" id="yayaya" role="tabpanel" aria-labelledby="yayaya-tab">
+                        <p class="fw-bold fs-3 text-center font-monospace mb-1">purposefully preposterous programming (p)language</p>
+                        <p class="fs-5">YAYAYA is an programming language I created based around the ever popular Brainfuck (and other similar esolangs). The intent behind the language was to make it fully pronounceable with the syllable "YA" (although most programs will sound the exact same when enunciated).</p>
+                        <p class="fs-5">The attached GitHub link also includes a compiler I wrote which parses any specified file text file as YAYAYA and displays the output of the program.</p>
+                        <p class="fs-5">Like Brainfuck, there are eight different commands that manipulate data pointers and an instruction pointer. The biggest difference is that YAYAYA contains a delimiter (YAH) which separates each command. Also, all white space is ignored in the parsing of the source code.</p>
+                        <button class="btn btn-dark" onclick="showCompiler()">Open YAYAYA Compiler</button>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Command</th>
+                                    <th scope="col">Function</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">YA</th>
+                                    <td>Increment data pointer</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">A</th>
+                                    <td>Decrement data pointer</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">YAYA</th>
+                                    <td>Increment byte at the data pointer</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">AYA</th>
+                                    <td>Decrement byte at the data pointer</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">YAYAYA</th>
+                                    <td>Output the byte at the data pointer</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">AYAYA</th>
+                                    <td>Take one byte of input from stdin and store it at the data pointer</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">??</th>
+                                    <td>If the byte at the data pointer is 0, jump to the matching !!</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">!!</th>
+                                    <td>If the byte at the data pointer is not 0, jump back to the first command after the matching ??</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">YAH</th>
+                                    <td>Delimiter of commands</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="fs-6 text-center mt-4">
+                            <a href="https://github.com/LyoRex/YAYAYA" class="list-group-item list-group-item-action">Link To Project</a>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="website2" role="tabpanel" aria-labelledby="website2-tab">
                         <p class="fw-bold fs-3 text-center font-monospace">another self-made webpage</p>
                         <p class="fs-5">This website is one of my first forays into web development. I originally created this website as a birthday gift for a friend, but over the years, I've gradually added more and more features.</p>
                         <p class="fs-5">A glaring issue about this website is the lack of responsiveness in almost every webpage. This project was started before I started formally learning Web Development (I still actually haven't started diving into it), so a lot of the CSS is hacky to get the desired result on a laptop/PC monitor with little regard to mobile viewing. Now that I'm working on my own personal website, I'll leave the CSS refactoring as a job for future me (future me, if you're reading this, just read it again and again and again).</p>
@@ -159,62 +215,6 @@
                         </ul>
                         <div class="fs-6 text-center mt-4">
                             <a href="https://github.com/LyoRex/LeoBot" target="_blank" class="list-group-item list-group-item-action">Link To Github</a>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="yayaya" role="tabpanel" aria-labelledby="yayaya-tab">
-                        <p class="fw-bold fs-3 text-center font-monospace mb-1">purposefully preposterous programming (p)language</p>
-                        <p class="fs-5">YAYAYA is an programming language I created based around the ever popular Brainfuck (and other similar esolangs). The intent behind the language was to make it fully pronounceable with the syllable "YA" (although most programs will sound the exact same when enunciated).</p>
-                        <p class="fs-5">The attached GitHub link also includes a compiler I wrote which parses any specified file text file as YAYAYA and displays the output of the program.</p>
-                        <p class="fs-5">Like Brainfuck, there are eight different commands that manipulate data pointers and an instruction pointer. The biggest difference is that YAYAYA contains a delimiter (YAH) which separates each command. Also, all white space is ignored in the parsing of the source code.</p>
-                        <button class="btn btn-dark" onclick="showCompiler()">Open YAYAYA Compiler</button>
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Command</th>
-                                    <th scope="col">Function</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">YA</th>
-                                    <td>Increment data pointer</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">A</th>
-                                    <td>Decrement data pointer</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">YAYA</th>
-                                    <td>Increment byte at the data pointer</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">AYA</th>
-                                    <td>Decrement byte at the data pointer</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">YAYAYA</th>
-                                    <td>Output the byte at the data pointer</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">AYAYA</th>
-                                    <td>Take one byte of input from stdin and store it at the data pointer</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">??</th>
-                                    <td>If the byte at the data pointer is 0, jump to the matching !!</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">!!</th>
-                                    <td>If the byte at the data pointer is not 0, jump back to the first command after the matching ??</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">YAH</th>
-                                    <td>Delimiter of commands</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="fs-6 text-center mt-4">
-                            <a href="https://github.com/LyoRex/YAYAYA" class="list-group-item list-group-item-action">Link To Project</a>
                         </div>
                     </div>
                 </div>
@@ -281,13 +281,6 @@
                 </tbody>
             </table>
         </main>
-        <nav class="navbar fixed-bottom navbar-expand-md navbar-dark bg-dark">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="https://toso.rocks" target="_blank">Onto the next site in the webring!</a>
-                </li>
-            </ul>
-        </nav>
     </body>
 
     <script src="js/projects.js"></script>
